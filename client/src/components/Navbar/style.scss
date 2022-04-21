@@ -1,0 +1,85 @@
+.navbar {
+  width: 100%;
+  height: 7.5rem;
+  box-shadow: 0 1px 1px 0px gray;
+  position: fixed;
+  top: 0;
+  // z-index: 10;
+  background-color: black;
+  .navbar_wrapper {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      h2 {
+        font-size: 4rem;
+        font-family: "Dancing Script", cursive;
+        cursor: pointer;
+        &:hover {
+          color: blue;
+        }
+      }
+    }
+    .navigations {
+      width: 50%;
+      height: 100%;
+      background-color: red;
+    }
+    .user_details {
+      width: 25%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      cursor: pointer;
+      .user_detail {
+        display: flex;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        img {
+          width: 3rem;
+          height: 3rem;
+          border-radius: 50%;
+        }
+        span {
+          font-size: 1.5rem;
+          margin-left: 0.4rem;
+        }
+        &:hover {
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+  }
+  .show_profile {
+    position: fixed;
+    top: 8rem;
+    right: 5rem;
+    padding: 0.1rem 3rem;
+    border: 1px solid var(--border);
+    border-radius: 0.4rem;
+    cursor: pointer;
+    background-color: black;
+    .navigate {
+      font-size: 1.6rem;
+      color: white;
+    }
+    &:hover{
+        .navigate{
+            color: rgb(26, 111, 209);
+            font-weight: bolder;
+        }
+    }
+  }
+}

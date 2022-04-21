@@ -1,0 +1,48 @@
+.forgot_password {
+  width: 100%;
+  height: calc(100vh - 7.5rem);
+  margin-top: 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .forgot_password_wrapper {
+    width: 40%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+
+    .send_otp {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 2rem 4rem 2rem;
+      h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: gray;
+      }
+      input {
+        width: 100%;
+        height: 5rem;
+        background: transparent;
+        border: 1px solid var(--border);
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        outline: none;
+        font-size: 1.8rem;
+        padding: 0 1rem;
+        &::placeholder {
+          font-size: 1.4rem;
+        }
+        &:focus::placeholder {
+          visibility: hidden;
+        }
+        &[type="submit"] {
+          background-color: red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

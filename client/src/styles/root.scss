@@ -1,0 +1,28 @@
+:root {
+  --hover-color: blue;
+  --text-color: white;
+
+  --text-font-size: 1.8rem;
+  --headers-font-size: 5rem;
+
+  --links-font-size: 2.1rem;
+  --links-font-weight: 400;
+  --links-font-family:"Dancing Script", cursive;
+
+  --hover-color: blue;
+
+  --border:rgba(255, 255, 255, 0.411);
+}
+
+.links {
+  color: var(--text-color);
+  font-size: var(--links-font-size);
+  text-decoration: none;
+  font-weight: var(--links-font-weight);
+  text-transform: capitalize;
+  transform-origin: left;
+  transition: all 200ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover {
+    border-bottom: 1px solid white;
+  }
+}
